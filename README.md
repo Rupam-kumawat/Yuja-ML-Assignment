@@ -1,4 +1,4 @@
-# Clustering Analysis Project
+![download](https://github.com/user-attachments/assets/ae60e20f-23c7-496d-94da-143a9f045450)# Clustering Analysis Project
 
 ## Overview
 This project demonstrates various clustering techniques applied to geospatial data using Python. The dataset contains longitude and latitude coordinates, and the goal is to explore the clustering structure and identify groups within the data. The clustering methods implemented include:
@@ -71,18 +71,25 @@ Each method's results were visualized using scatter plots, with colors represent
 ### K-Means
 - Optimal “k”: **(48)**
 - Silhouette Score: **(0.5942)**
+- ![download](https://github.com/user-attachments/assets/f128afc0-7bf4-4f8b-b5d3-381810e0af11)
+
 
 ### DBSCAN
 - Best Parameters: **eps = (0.1)**, **min_samples = (45)**
 - Silhouette Score: **(0.6700)**
+- ![download](https://github.com/user-attachments/assets/ea766b30-189e-46c9-ab82-0548d1bffeb7)
+
 
 ### HDBSCAN
 - Best Parameters: **min_cluster_size = (45)**, **min_samples = (45)**
 - Silhouette Score: **(0.8471)**
+- ![download](https://github.com/user-attachments/assets/b45ac935-bdf2-4974-b3da-410d722b37e6)
+
 
 ### Hierarchical Clustering
 - Optimal Number of Clusters: **(49)**
 - Silhouette Score: **(0.5914)**
+- ![download](https://github.com/user-attachments/assets/2c33b69f-dd55-4175-a7f9-1890dc340582)
 
 While the Silhouette Scores for DBSCAN (0.6700) and HDBSCAN (0.8471) are higher compared to K-Means (0.5942) and Hierarchical Clustering (0.5914), it is important to consider the proportion of points classified as noise by DBSCAN and HDBSCAN.
 
