@@ -8,6 +8,7 @@ def dbscan_clustering(data, eps_range, min_samples_range):
     best_eps = None
     best_min_samples = None
     best_score = -1
+    best_labels=None
 
     for eps in eps_range:
         for min_samples in min_samples_range:
@@ -24,8 +25,9 @@ def dbscan_clustering(data, eps_range, min_samples_range):
                         best_eps = eps
                         best_min_samples = min_samples
                         best_score = score
+                        best_labels=labels
     
-    return best_eps, best_min_samples, best_score
+    return best_eps, best_min_samples, best_score, best_labels
 
 def visualize_dbscan(data, labels):
     unique_labels = set(labels)
