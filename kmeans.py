@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 def kmeans_clustering(data, max_clusters=50):
     best_k = None
     best_score = -1
+    best_labels=None
     for k in range(2, max_clusters):
         kmeans = KMeans(n_clusters=k, random_state=42)
         kmeans.fit(data)
@@ -16,8 +17,10 @@ def kmeans_clustering(data, max_clusters=50):
             if score > best_score:
                 best_k = k
                 best_score = score
+                best_labels=labels
+                best_kmeans_model = kmeans
     
-    return best_k, best_score
+    return best_k, best_score, best_labels, best_kmeans_model
 
 def visualize_kmeans(data, labels, centroids):
     plt.figure(figsize=(8, 6))
