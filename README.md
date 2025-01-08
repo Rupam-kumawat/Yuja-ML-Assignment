@@ -84,6 +84,14 @@ Each method's results were visualized using scatter plots, with colors represent
 - Optimal Number of Clusters: **(49)**
 - Silhouette Score: **(0.5914)**
 
+While the Silhouette Scores for DBSCAN (0.6700) and HDBSCAN (0.8471) are higher compared to K-Means (0.5942) and Hierarchical Clustering (0.5914), it is important to consider the proportion of points classified as noise by DBSCAN and HDBSCAN.
+
+Both DBSCAN and HDBSCAN classify a significant portion of the data points as noise, which can lead to a misleadingly high Silhouette Score. This happens because the score is calculated only on the remaining clustered points, which may exhibit high intra-cluster similarity. However, this approach might overlook valuable insights about the full dataset.
+
+In contrast, K-Means, with an optimal "k" of 48, successfully clusters the entire dataset without discarding any points as noise. Although its Silhouette Score is slightly lower, it provides a more comprehensive clustering solution that considers all the data points, making it the better choice for this specific dataset.
+
+Thus, K-Means is deemed the preferred clustering method in this case, balancing interpretability, completeness, and utility.
+
 ---
 
 ## Files and Structure
