@@ -95,22 +95,6 @@ Each method's results were visualized using scatter plots, with colors represent
 6. **`hierarchical_clustering.py`**: Implements hierarchical clustering and visualizations.
 7. **`run_clustering.py`**: The main script to execute all clustering methods sequentially.
 
----
 
-## Usage
-1. Install dependencies using `pip install -r requirements.txt`.
-2. Place the dataset file (`ML Assignment Dataset.csv`) in the project directory.
-3. Run the script:
-   ```bash
-   python run_clustering.py
-   ```
-4. Outputs include printed evaluation metrics and cluster visualizations for each method.
-
----
-
-## Future Improvements
-1. Implement advanced evaluation metrics for non-convex clusters.
-2. Automate parameter tuning using Bayesian optimization or genetic algorithms.
-3. Extend support to higher-dimensional data with dimensionality reduction techniques like PCA or t-SNE.
 
 
