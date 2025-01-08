@@ -7,6 +7,7 @@ def hdbscan_clustering(data, min_cluster_size_range, min_samples_range):
     best_min_cluster_size = None
     best_min_samples = None
     best_score = -1
+    best_labels=None
 
     for min_cluster_size in min_cluster_size_range:
         for min_samples in min_samples_range:
@@ -23,8 +24,9 @@ def hdbscan_clustering(data, min_cluster_size_range, min_samples_range):
                         best_min_cluster_size = min_cluster_size
                         best_min_samples = min_samples
                         best_score = score
+                        best_labels=labels
 
-    return best_min_cluster_size, best_min_samples, best_score
+    return best_min_cluster_size, best_min_samples, best_score, best_labels
 
 def visualize_hdbscan(data, labels):
     plt.figure(figsize=(10, 7))
