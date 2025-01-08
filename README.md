@@ -69,20 +69,20 @@ Each method's results were visualized using scatter plots, with colors represent
 
 ## Results
 ### K-Means
-- Optimal “k”: **(varies per run)**
-- Silhouette Score: **(varies per run)**
+- Optimal “k”: **(48)**
+- Silhouette Score: **(0.5942)**
 
 ### DBSCAN
-- Best Parameters: **eps = (value)**, **min_samples = (value)**
-- Silhouette Score: **(value)**
+- Best Parameters: **eps = (0.1)**, **min_samples = (45)**
+- Silhouette Score: **(0.6700)**
 
 ### HDBSCAN
-- Best Parameters: **min_cluster_size = (value)**, **min_samples = (value)**
-- Silhouette Score: **(value)**
+- Best Parameters: **min_cluster_size = (45)**, **min_samples = (45)**
+- Silhouette Score: **(0.8471)**
 
 ### Hierarchical Clustering
-- Optimal Number of Clusters: **(value)**
-- Silhouette Score: **(value)**
+- Optimal Number of Clusters: **(49)**
+- Silhouette Score: **(0.5914)**
 
 ---
 
