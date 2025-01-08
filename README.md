@@ -1,4 +1,4 @@
-![download](https://github.com/user-attachments/assets/ae60e20f-23c7-496d-94da-143a9f045450)# Clustering Analysis Project
+
 
 ## Overview
 This project demonstrates various clustering techniques applied to geospatial data using Python. The dataset contains longitude and latitude coordinates, and the goal is to explore the clustering structure and identify groups within the data. The clustering methods implemented include:
